@@ -16,7 +16,7 @@ def _get_model(model_name: str):
     elif model_name == "gpt-4o-mini":
         model =  ChatOpenAI(temperature=0, model_name="gpt-4o-mini")
     elif model_name == "gpt-4o-mini-2024-07-18":
-        model = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-0125")
+        model = ChatOpenAI(temperature=0, model_name="gpt-4o-mini-2024-07-18")
     else:
         raise ValueError(f"Unsupported model type: {model_name}")
 
