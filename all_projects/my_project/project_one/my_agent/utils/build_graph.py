@@ -15,7 +15,7 @@ def _get_model(model_name: str):
         model = ChatOpenAI(temperature=0, model_name="gpt-4o")
     elif model_name == "gpt-4o-mini":
         model =  ChatOpenAI(temperature=0, model_name="gpt-4o-mini")
-    elif model_name == "gpt-3.5-turbo":
+    elif model_name == "gpt-4o-mini-2024-07-18":
         model = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-0125")
     else:
         raise ValueError(f"Unsupported model type: {model_name}")
@@ -58,7 +58,7 @@ tool_node = ToolNode(tools)
 
 # Define the config
 class GraphConfig(TypedDict):
-    model_name: Literal["gpt-4o", "gpt-4o-mini","gpt-3.5-turbo"]
+    model_name: Literal["gpt-4o", "gpt-4o-mini","gpt-4o-mini-2024-07-18"]
 
 
 # Define a new graph
